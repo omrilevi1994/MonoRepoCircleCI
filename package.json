@@ -1,0 +1,28 @@
+{
+  "name": "monorepocircleci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omrilevi1994/MonoRepoCircleCI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omrilevi1994/MonoRepoCircleCI/issues"
+  },
+  "homepage": "https://github.com/omrilevi1994/MonoRepoCircleCI#readme",
+  "dependencies": {
+    "lerna": "^3.19.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
