@@ -101,7 +101,7 @@ workflows:
             - app-api-build
 
   frontend:
-    when: << pipeline.parameters.app >>
+    when: << pipeline.parameters.frontend >>
     jobs:
       - build:
           name: app-frontend-build
@@ -113,7 +113,7 @@ workflows:
             - app-frontend-build
 
   e2e:
-    when: << pipeline.parameters.auth >>
+    when: << pipeline.parameters.e2e >>
     jobs:
       - build:
           name: e2e-build
