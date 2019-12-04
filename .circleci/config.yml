@@ -7,10 +7,10 @@ parameters:
     default: true
 
   # A parameter per package
-  app-api:
+  "app-api":
     type: boolean
     default: false
-  app-frontend:
+  "app-frontend":
     type: boolean
     default: false
   e2e:
@@ -88,7 +88,7 @@ workflows:
 
   # Workflows defined for each package.
 
-  app-api:
+  "app-api":
     when: << pipeline.parameters.api >>
     jobs:
       - build:
@@ -100,7 +100,7 @@ workflows:
           requires:
             - app-api-build
 
-  app-frontend:
+  "app-frontend":
     when: << pipeline.parameters.app >>
     jobs:
       - build:
